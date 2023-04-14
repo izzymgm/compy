@@ -18,11 +18,11 @@ This repository is used to host scripts and notes for our project on computation
 
 * The script ```compy.py``` is modified based on the works of [Izzy Goodchild-Michelman, Zomorrodi Lab](https://github.com/zomorrodilab/izzy-gm). The modifications include:
 
-- Bug Fixes
+* __Bug Fixes__
 * Fixed error with reading in VMH diet with tab-delimiter
 * Fixed diet bounds being set as positive
 
-- Improvements
+* __Improvements__
 * Added optimization function ```opt_comm_gem.py```
 * Combined core pipeline into single file ```compy.py```
 * Added clearer printed checkpoints when running pipeline
@@ -30,6 +30,6 @@ This repository is used to host scripts and notes for our project on computation
 * Cleaned comments and syntactic redundancies
 * Follows PEP 8 styling guidelines
 
-- Pending Implementations
+* __Pending Implementations__
 * Automatic incorporation of metabolites and reactions needed for AGORA 2.01 model growth (emulating adaptVMHDietToAGORA() by [Heinken et al. (2022)](https://pubmed.ncbi.nlm.nih.gov/35157025/)) 
 * Parallelized model construction and optimization
