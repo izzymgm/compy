@@ -16,6 +16,7 @@ This repository is used to host scripts and notes for our project on computation
 
 ### 2.2. Notes
 
+**Most up-to-date changes are hosted on my personal public repository [here](https://github.com/kevinliu-bmb/ComPy_rev)**
 #### 2.2.1. Compy
 
 * The script ```compy.py``` is modified based on the works of [Izzy Goodchild-Michelman, Zomorrodi Lab](https://github.com/zomorrodilab/izzy-gm). The modifications include:
