@@ -1,6 +1,6 @@
 # kevin-liu
 
-**Updated April 14, 2023**
+**Updated April 18, 2023**
 
 ## 1. Repository Description
 
@@ -33,7 +33,8 @@ This repository is used to host scripts and notes for our project on computation
 * Removed string manipulation redundancies
 * Cleaned comments and syntactic redundancies
 * Follows PEP 8 styling guidelines
+* (Experimental) Parallel processing of optimization pipeline
 
 * __Pending Implementations__
 * Automatic incorporation of metabolites and reactions needed for AGORA 2.01 model growth (emulating adaptVMHDietToAGORA() by [Heinken et al. (2022)](https://pubmed.ncbi.nlm.nih.gov/35157025/)) 
-* Parallelized model construction and optimization
+* Parallelized model construction
