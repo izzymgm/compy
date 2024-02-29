@@ -395,7 +395,7 @@ def species_to_community(model, species_model_name):
     return model
 
 
-def compy(abun_filepath, mod_filepath, out_filepath, diet_filepath=None):
+def compy(abun_filepath, mod_filepath, out_filepath, diet_filepath=None,abun_threshold=0.0001):
     """
     Inspired by MICOM community building and mgpipe.m code.
     Main pipeline which inputs the GEMs data and accesses the different functions.
@@ -411,6 +411,8 @@ def compy(abun_filepath, mod_filepath, out_filepath, diet_filepath=None):
             E.g. "~/compy_results/"
         dietpath: path to the AGORA compatible diet (for community model) .csv file
             E.g. "~/data_input/AverageEU_diet_fluxes.csv"
+        abun_threshold: a float between 0-1 species with an abundance below this threshold will not be
+            included in the community level model (default = 0.0001)
   
     OUTPUTS:
         All sample community models to a specified local folder
