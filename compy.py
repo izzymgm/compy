@@ -175,11 +175,11 @@ def com_biomass(model, abun_path, sample_com):
     biomass_mets_list = sorted(biomass_mets_list)
 
     # Reading in the abundance file, sort species alphabetically,
-    # and remove species with abundances < 0.0009
+    # and remove species with abundances < abun_threshold
     norm_abund = pd.read_csv(abun_path)
     norm_abund = norm_abund.sort_values("X", ascending=True)
     norm_abund = norm_abund.reset_index(drop=True)
-    norm_abund = norm_abund.loc[~((norm_abund[sample_com] < 0.0009))]
+    norm_abund = norm_abund.loc[~((norm_abund[sample_com] < abun_threshold))]
     norm_abund_list = norm_abund[sample_com].tolist()
 
     # Creating the community biomass reaction
